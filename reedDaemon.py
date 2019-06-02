@@ -7,7 +7,7 @@ import paho.mqtt.client as mqtt
 
 ########################################
 # CONFIG:
-PIN=4	#GPIO pint to use as input
+PIN=4	#GPIO pin to use as input
 ########################################
 
 print("########################################################")
