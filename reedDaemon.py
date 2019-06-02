@@ -26,7 +26,7 @@ print("########################################################")
 timer=None
 mqttClient=None                         # mqtt client instance
 hostname = socket.gethostname()         # hostname of this device
-mqttHost = "192.168.178.6"              # mqtt server host
+mqttHost = "10.0.0.2"              # mqtt server host
 mqttPort =  1883                        # mqtt port number
 mqttKeepalive = 60                      # mqtt port number
 mqttTopic = "%s/door" % (hostname)      # host based topic
