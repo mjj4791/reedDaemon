@@ -110,7 +110,7 @@ def sendMqtt(topic, payload):
 
     try:
         # connected?, so publish:
-        mqttClient.publish(topic, payload)  #publish
+        mqttClient.publish(topic, payload, qos = 0, retain = True)  #publish
     except Exception:
         print("Not yet connected? Skipping message...")
 
@@ -122,7 +122,7 @@ def sendMqttOnline():
     global mqttClient, mqttLWTTopic, mqttLWTOnline
 
     # publish online status:
-    mqttClient.publish(mqttLWTTopic, mqttLWTOnline)
+    mqttClient.publish(mqttLWTTopic, mqttLWTOnline, qos = 0, retain = True)
 
 #######################################
 # onMqttDisconnect                    #
