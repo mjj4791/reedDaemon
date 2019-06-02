@@ -2,7 +2,7 @@
 Python Daemon for Raspberry Pi GPIO reed switch
 
 ## Hardware
-For this project, I used a reaspberry Pi 2B, which I was already using for other projects as well ().
+For this project, I used a raspberry Pi 2B, which I was already using for other projects as well ([here](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/ "www.raspberrypi.org")).
 
 Next to that, I used some fancy and very small reed switches, you can easily mount in a door, hidden from view ([here](https://www.dx.com/p/rc-33-5pcs-wired-door-magnetic-reed-switches-alarms-set-white-2084142 "DX.com")).
 
