@@ -1,0 +1,20 @@
+[Unit]
+Description=reedDaemon door monitor
+Wants=network.target
+After=syslog.target
+
+[Service]
+Type=forking
+User=pi
+Group=pi
+WorkingDirectory=/tmp
+
+StandardOutput=syslog
+StandardError=syslog
+
+ExecStart=/home/pi/reed/reedDaemon.sh start
+ExecStop=/home/pi/reed/reedDaemon.sh stop
+
+[Install]
+WantedBy=multi-user.target
+Alias=reedDaemon
